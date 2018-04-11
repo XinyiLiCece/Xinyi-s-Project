@@ -52,7 +52,7 @@ export class PresentQuery2Component implements AfterViewInit {
     //console.log(this.mycanvas);
     var ctx =  this.mycanvas.nativeElement.getContext('2d');
     this.chart = new Chart(ctx, {
-      type: 'bar',
+      type: 'doughnut',
       data: {
         labels: this.data.labels,
         datasets: [

@@ -34,6 +34,8 @@ export class PresentQuery4Component implements AfterViewInit{
   }
 
   ngOnInit(){
+    this.dbversion=this.db.getDbVersion();
+    console.log(this.dbversion)
     this.http.get<any>(`https://adbm-final.herokuapp.com/api/database/${this.dbversion}/query/4`).subscribe(
       data =>{
         this.extract_data(data);
@@ -49,7 +51,8 @@ export class PresentQuery4Component implements AfterViewInit{
     )
   }
   ngAfterViewInit() {
-    console.log(this.mycanvas);
+    
+
 
     var ctx =  this.mycanvas.nativeElement.getContext('2d');
     this.chart = new Chart(ctx, {

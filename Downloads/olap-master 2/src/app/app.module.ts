@@ -73,7 +73,6 @@ import { PresentQuery9Component } from './component/present-query9/present-query
     PresentQuery4Component,
     PresentQuery8Component,
     PresentQuery7Component,
-   
     PresentQuery9Component,
     
 
